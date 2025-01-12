@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.app {
+    width: 100%;
+    height: 45vw;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1c1c1c;
+    padding: 10px 0;
+    gap: 30px;
+    border-bottom: 1px solid #333;
+    max-width: 70%;
+    margin: 0 auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar button {
+    flex: 1;
+    margin: 0 5px;
+    background-color: #1c1c1c;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar button:hover,
+.navbar button:focus {
+    background-color: #333;
+}
+.navbar button:active {
+    background-color: #555;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+    height: calc(100% - 50px);
+}
+
+.clock,
+.alarm,
+.stopwatch,
+.timer {
+    font-size: 36px;
+}
+
+input[type="time"],
+input[type="number"] {
+    width: 50%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+button {
+    background-color: #f39c12;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #e67e22;
+}
+
+button:active {
+    background-color: #d35400;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input[type="time"],
+    input[type="number"] {
+        font-size: 16px;
+        padding: 8px;
+        width: 70%;
+    }
+
+    .clock,
+    .alarm,
+    .stopwatch,
+    .timer {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    input[type="time"],
+    input[type="number"] {
+        font-size: 14px;
+        padding: 6px;
+        width: 80%;
+    }
+
+    .clock,
+    .alarm,
+    .stopwatch,
+    .timer {
+        font-size: 20px;
+    }
+
+    .app {
+        width: 100%;
+        height: 80vw;
+        background-color: #121212;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: #1c1c1c;
+        padding: 10px 0;
+        gap: 15px;
+        border-bottom: 1px solid #333;
+        max-width: 70%;
+        margin: 0 auto;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
